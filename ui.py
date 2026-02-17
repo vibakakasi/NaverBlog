@@ -103,7 +103,7 @@ def init_session_state() -> None:
 def render_sidebar(total_chars: int = 0, non_space_chars: int = 0) -> tuple[float, str]:
     st.sidebar.header("설정")
     temperature = st.sidebar.slider("창의성(temperature)", 0.0, 1.0, 0.5, 0.1)
-    model = st.sidebar.text_input("Google 모델명", value="gemini-2.0-flash-lite")
+    model = st.sidebar.text_input("Google 모델명", value="gemini-2.5-flash-lite")
     st.sidebar.info("API 키는 .env 파일의 GOOGLE_API_KEY를 사용합니다.")
 
     st.sidebar.divider()
