@@ -1,6 +1,4 @@
 ﻿from __future__ import annotations
-
-# Streamlit 앱 진입점입니다.
 import os
 import re
 import streamlit as st
